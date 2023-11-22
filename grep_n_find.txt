@@ -1,0 +1,17 @@
+* How to recursively search for things using grep
+grep -r --include='*.cpp' 'your_search_string' /path/to/search
+* Case insensitive search 
+grep -r -i --include='*.cpp' 'your_search_string' /path/to/search
+
+
+
+// FIND Things in LINUX //
+
+// find files with cpp extension.
+find /path/to/search -name "*.cpp"
+
+// find everything with example
+find /path/to/search -name "*example*"
+
+// Find items that have been modified in the last 7 days.
+find /path/to/search -mtime -7
